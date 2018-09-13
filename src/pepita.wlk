@@ -5,6 +5,8 @@ object pepita {
 	var property ciudad = buenosAires 
 
 	var property posicion = game.at(3,3)
+	
+	// TODO falta lo de las imagenes según la energía
 	method imagen() = "pepita.png"
 	
 	method come(comida) {
@@ -17,6 +19,7 @@ object pepita {
 			self.move(unaCiudad.posicion())
 			ciudad = unaCiudad
 		} else {
+			// TODO ojo porque si está en null también responde esto 
 		  game.say(self, 'Ya estoy en ' + unaCiudad + '!')
 		}	
 	}

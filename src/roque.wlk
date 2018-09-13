@@ -6,6 +6,7 @@ object roque {
 	
 	method agarrar(nuevaComida) {	  
 	  if (comidaActual != null) {
+	  	// TODO capaz se le puede setear una posición random y listo
 	    if (posicion == new Position(7,7))
 	     game.addVisualIn(comidaActual, posicion.down(1))
 	    else
